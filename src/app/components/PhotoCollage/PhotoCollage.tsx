@@ -2,7 +2,7 @@ import { CollageImage } from './CollageImage'
 
 export const PhotoCollage = () => {
     return (
-        <div className="grow basis-1/2 py-16 grid grid-cols-16 grid-rows-16 grid-flow-dense">
+        <div className="grow basis-1/2 grid grid-cols-16 grid-rows-16 grid-flow-dense">
             <CollageImage
                 src="/alan.jpg"
                 alt="Alan, a member of Warboys Table Tennis Club"

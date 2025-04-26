@@ -4,6 +4,19 @@ import { Pin } from './icons/Pin'
 import { Event } from './icons/Event'
 import { PhotoCollage } from './components/PhotoCollage/PhotoCollage'
 
+/**
+ * Sections...
+ *
+ * - Navbar
+ * - Hero
+ * - Practice nights
+ * - History / about + where to find us
+ * - Competition
+ * - Contact
+ * - FAQs
+ * - Footer
+ */
+
 const clubEmail = 'warboystabletennisclub@gmail.com'
 
 const clubAddressShort = 'Warboys Sports & Social Club'
@@ -34,7 +47,7 @@ export default function Home() {
                     </div>
                 </div>
             </nav>
-            <section className="flex items-center max-w-7xl mx-auto">
+            <section className="flex items-center max-w-7xl mx-auto py-16">
                 <div className="grow basis-1/2 flex flex-col gap-4">
                     <h1 className="text-6xl font-black">
                         Warboys Table Tennis Club
@@ -51,6 +64,35 @@ export default function Home() {
                     </p>
                 </div>
                 <PhotoCollage />
+            </section>
+            <section className="bg-blue">
+                <div className="max-w-7xl mx-auto py-16 flex justify-between">
+                    <div>
+                        <h2 className="text-4xl font-bold">Practice Nights</h2>
+                        <p className="flex items-center gap-4 mt-4 max-w-xl">
+                            We practice from 7:30pm on Thursday nights with 3
+                            tables available. We have a range of ability levels
+                            from beginner to national league as well as a range
+                            of ages from teenagers to 60+.
+                        </p>
+                        <h2 className="text-4xl font-bold mt-8">Competition</h2>
+                        <p className="flex items-center gap-4 mt-4 max-w-xl">
+                            We play in the Peterborough & District Table Tennis
+                            League having entered 3 teams for the 2024/25
+                            season. Players of all abilities are welcome to join
+                            the club and play in the league.
+                        </p>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18573.133972422787!2d-0.08253697270635704!3d52.39723498913108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877e0df452b9b03%3A0xe9c2da897813fd03!2sWarboys%20Sports%20%26%20Social%20Club!5e1!3m2!1sen!2suk!4v1745703533290!5m2!1sen!2suk"
+                        width="600"
+                        height="450"
+                        style={{ border: 0 }}
+                        allowFullScreen={false}
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
             </section>
             <footer className="bg-navy text-light py-4">
                 <div className="max-w-7xl mx-auto flex gap-8">
