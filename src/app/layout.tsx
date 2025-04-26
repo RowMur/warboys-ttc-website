@@ -25,6 +25,12 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <head>
+                <meta
+                    name="google-site-verification"
+                    content="nIaXJjpnScxqjlOglKNSfFJoP-MKdusxRt_nRhULhIg"
+                />
+            </head>
             <body
                 className={`${montserrat.variable} ${openSans.variable} antialiased bg-light`}
             >
