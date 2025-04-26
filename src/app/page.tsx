@@ -3,6 +3,13 @@ import { Mail } from './icons/Mail'
 import { Pin } from './icons/Pin'
 import { Event } from './icons/Event'
 import { PhotoCollage } from './components/PhotoCollage/PhotoCollage'
+import {
+    COMPETITION_CONTENT,
+    COMPETITION_TITLE,
+    FAQs,
+    PRACTICE_NIGHTS_CONTENT,
+    PRACTICE_NIGHTS_TITLE,
+} from './content'
 
 /**
  * Sections...
@@ -68,19 +75,17 @@ export default function Home() {
             <section className="bg-blue">
                 <div className="max-w-7xl mx-auto py-16 flex justify-between">
                     <div>
-                        <h2 className="text-4xl font-bold">Practice Nights</h2>
+                        <h2 className="text-4xl font-bold">
+                            {PRACTICE_NIGHTS_TITLE}
+                        </h2>
                         <p className="flex items-center gap-4 mt-4 max-w-xl">
-                            We practice from 7:30pm on Thursday nights with 3
-                            tables available. We have a range of ability levels
-                            from beginner to national league as well as a range
-                            of ages from teenagers to 60+.
+                            {PRACTICE_NIGHTS_CONTENT}
                         </p>
-                        <h2 className="text-4xl font-bold mt-8">Competition</h2>
+                        <h2 className="text-4xl font-bold mt-8">
+                            {COMPETITION_TITLE}
+                        </h2>
                         <p className="flex items-center gap-4 mt-4 max-w-xl">
-                            We play in the Peterborough & District Table Tennis
-                            League having entered 3 teams for the 2024/25
-                            season. Players of all abilities are welcome to join
-                            the club and play in the league.
+                            {COMPETITION_CONTENT}
                         </p>
                     </div>
                     <iframe
@@ -93,6 +98,17 @@ export default function Home() {
                         referrerPolicy="no-referrer-when-downgrade"
                     ></iframe>
                 </div>
+            </section>
+            <section className="max-w-7xl mx-auto py-16">
+                <h2 className="text-4xl font-bold">FAQs</h2>
+                {FAQs.map((faq) => (
+                    <>
+                        <p className="text-xl font-semibold mt-8">
+                            {faq.question}
+                        </p>
+                        <p className="mt-2">{faq.answer}</p>
+                    </>
+                ))}
             </section>
             <footer className="bg-navy text-light py-4">
                 <div className="max-w-7xl mx-auto flex gap-8">
