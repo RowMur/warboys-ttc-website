@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Mail } from './icons/Mail'
 import { Pin } from './icons/Pin'
 import { Event } from './icons/Event'
+import { PhotoCollage } from './components/PhotoCollage/PhotoCollage'
 
 const clubEmail = 'warboystabletennisclub@gmail.com'
 
@@ -49,7 +50,7 @@ export default function Home() {
                         </span>
                     </p>
                 </div>
-                <div className="grow basis-1/2 min-h-[700px]"></div>
+                <PhotoCollage />
             </section>
             <footer className="bg-navy text-light py-4">
                 <div className="max-w-7xl mx-auto flex gap-8">
