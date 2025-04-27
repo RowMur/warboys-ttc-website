@@ -60,7 +60,7 @@ export default function Home() {
             </nav>
             <section className="flex flex-col md:flex-row items-center max-w-7xl px-8 mx-auto py-16 gap-8 md:gap-0">
                 <div className="grow basis-1/2 flex flex-col gap-4">
-                    <h1 className="text-3xl md:text-6xl font-black">
+                    <h1 className="text-3xl md:text-4xl lg:text-6xl font-black">
                         Warboys Table Tennis Club
                     </h1>
                     <p className="flex flex-col font-semibold text-lg gap-4">
