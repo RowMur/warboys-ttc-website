@@ -18,12 +18,16 @@ export const FAQs: FAQ[] = [
         answer: 'No, feel free to come along and play. If you enjoy it, you can join one of our teams to play in the local league.',
     },
     {
-        question: 'Do I need to bring my own bat?',
-        answer: 'No, we have a few bats available to borrow. However, if you have your own bat, bring it along.',
-    },
-    {
         question: 'Do I need to book a place?',
         answer: 'No, you can just turn up on the night. If you are new to the club we recommend that you email before coming to make sure that practice is on. Whilst we play all year round, there are a few weeks across the year where the hall is being used. We have 3 tables available and rotate players around to get a range of matches.',
+    },
+    {
+        question: 'What if I have never played before?',
+        answer: 'No problem! We have a range of players of all abilities and will be happy to help you learn the game.',
+    },
+    {
+        question: 'Do I need to bring my own bat?',
+        answer: 'No, we have a few bats available to borrow. However, if you have your own bat, bring it along.',
     },
     {
         question: 'What is the cost?',
@@ -36,9 +40,5 @@ export const FAQs: FAQ[] = [
     {
         question: 'Is there a coach?',
         answer: 'No, we do not have an official coach. However, we have a range of players of all abilities and will be happy to help you learn the game - we all give each other tips and advice.',
-    },
-    {
-        question: 'What if I have never played before?',
-        answer: 'No problem! We have a range of players of all abilities and will be happy to help you learn the game.',
     },
 ]

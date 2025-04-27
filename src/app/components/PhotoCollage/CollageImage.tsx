@@ -14,7 +14,7 @@ export const CollageImage = (props: Props) => {
         <Image
             src={props.src}
             alt={props.alt}
-            className={`object-cover h-full w-full`}
+            className={`object-cover h-full w-full rounded`}
             height={500}
             width={500}
             style={{

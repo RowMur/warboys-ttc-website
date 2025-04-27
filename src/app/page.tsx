@@ -58,7 +58,7 @@ export default function Home() {
                     </div>
                 </div>
             </nav>
-            <section className="flex flex-col md:flex-row items-center max-w-7xl px-8 mx-auto py-16">
+            <section className="flex flex-col md:flex-row items-center max-w-7xl px-8 mx-auto py-16 gap-8 md:gap-0">
                 <div className="grow basis-1/2 flex flex-col gap-4">
                     <h1 className="text-3xl md:text-6xl font-black">
                         Warboys Table Tennis Club
@@ -109,12 +109,12 @@ export default function Home() {
             <section className="max-w-7xl px-8 mx-auto py-16">
                 <h2 className="text-4xl font-bold">FAQs</h2>
                 {FAQs.map((faq) => (
-                    <>
+                    <div key={faq.question}>
                         <p className="text-xl font-semibold mt-8">
                             {faq.question}
                         </p>
                         <p className="mt-2">{faq.answer}</p>
-                    </>
+                    </div>
                 ))}
             </section>
             <footer className="bg-navy text-light py-4">
