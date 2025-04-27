@@ -81,7 +81,15 @@ export default function Home() {
                 <PhotoCollage />
             </section>
             <section className="bg-blue">
-                <div className="max-w-7xl px-8 mx-auto py-16 flex flex-col md:flex-row justify-between gap-16">
+                <div className="max-w-7xl px-8 mx-auto py-16 flex flex-col-reverse md:flex-row justify-between gap-4 md:gap-16">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18573.133972422787!2d-0.08253697270635704!3d52.39723498913108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877e0df452b9b03%3A0xe9c2da897813fd03!2sWarboys%20Sports%20%26%20Social%20Club!5e1!3m2!1sen!2suk!4v1745703533290!5m2!1sen!2suk"
+                        style={{ border: 0 }}
+                        allowFullScreen={false}
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className="w-full h-96 md:w-1/2 md:h-auto mt-16 md:mt-0"
+                    ></iframe>
                     <div>
                         <h2 className="text-4xl font-bold">
                             {PRACTICE_NIGHTS_TITLE}
@@ -96,14 +104,6 @@ export default function Home() {
                             {COMPETITION_CONTENT}
                         </p>
                     </div>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18573.133972422787!2d-0.08253697270635704!3d52.39723498913108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877e0df452b9b03%3A0xe9c2da897813fd03!2sWarboys%20Sports%20%26%20Social%20Club!5e1!3m2!1sen!2suk!4v1745703533290!5m2!1sen!2suk"
-                        style={{ border: 0 }}
-                        allowFullScreen={false}
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
-                        className="w-full h-96 md:w-1/2 md:h-auto mt-16 md:mt-0"
-                    ></iframe>
                 </div>
             </section>
             <section className="max-w-7xl px-8 mx-auto py-16">

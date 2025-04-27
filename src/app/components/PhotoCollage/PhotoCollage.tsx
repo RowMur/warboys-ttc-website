@@ -2,7 +2,7 @@ import { CollageImage } from './CollageImage'
 
 export const PhotoCollage = () => {
     return (
-        <div className="grow basis-1/2 grid grid-cols-16 grid-rows-16 gap-2 max-h-screen max-w-screen px-8 md:x-0 aspect-square">
+        <div className="grow basis-1/2 grid grid-cols-16 grid-rows-16 gap-2 max-h-screen max-w-screen px-8 md:px-0 aspect-square">
             <CollageImage
                 src="/b-team-2022.jpg"
                 alt="B Team 2022, a team of Warboys Table Tennis Club"
